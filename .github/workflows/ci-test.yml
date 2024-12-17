@@ -1,5 +1,7 @@
 name: Environment の secrets と variables の違いを見るテスト
-on: push
+on: 
+    push:
+    workflow_dispatch:
 
 env:
   THIS_IS_ENVIRONMENT_SECRETS: ${{ secrets.ENV_SECRETS }}
